@@ -12,10 +12,12 @@ const app = Vue.createApp({
       ],
       methods: {
         addToCart() {
-          this.cart += 1
+          this.cart += 1;
         },
         removeFromCart() {
-          this.cart -= 1
+          if (cart >= 1) {
+            this.cart -= 1;
+          }
         },
         updateImage(variantImage) {
           this.image = variantImage;
