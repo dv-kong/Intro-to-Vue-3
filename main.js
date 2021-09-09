@@ -5,7 +5,7 @@ const app = Vue.createApp({
       product: "Socks",
       brand: "Vue Mastery",
       selectedVariant: 0,
-      onSale = true,
+    
      
       details: ["50% cotton", "30% wool", "20% polyester"],
       variants: [
@@ -21,7 +21,8 @@ const app = Vue.createApp({
           image: "./assets/images/socks_blue.jpg",
           quantity: 0,
         },
-      ], 
+      ],  
+       onSale = true,
     };
   },
   methods: {
